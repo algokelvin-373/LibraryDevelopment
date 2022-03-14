@@ -1,2 +1,3 @@
 rootProject.name = "LibAlgokelvinDemo"
 include ':app'
+include ':lib-algokelvin'

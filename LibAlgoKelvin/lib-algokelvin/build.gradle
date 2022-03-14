@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
 }
 
 android {
@@ -7,13 +7,13 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "algokelvin.lib.demo"
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -31,27 +31,4 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 }
-
-//task sourceJar(type: Jar) {
-//    from android.sourceSets.main.java.srcDirs
-//    classifier "sources"
-//}
-//
-//publishing {
-//    publications {
-//        bar(MavenPublication) {
-//            groupId 'com.algokelvin'
-//            artifactId 'libdt'
-//            version '0.1'
-//            artifact(sourceJar)
-//            artifact("$buildDir/outputs/aar/app-debug.aar")
-//        }
-//    }
-//    repositories {
-//        maven {
-//            url "$buildDir/repo"
-//        }
-//    }
-//}
