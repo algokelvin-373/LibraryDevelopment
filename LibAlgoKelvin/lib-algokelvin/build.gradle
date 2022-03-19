@@ -42,7 +42,7 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'algokelvin.lib.demo'
-                artifactId = 'sample-demo-lib'
+                artifactId = 'lib-algokelvin'
                 version = '1.0.0'
             }
         }
